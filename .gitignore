@@ -8,5 +8,6 @@
 obj/
 bin/
 .vs/
-
+*.jfm
+*.dbmdl
 *.dtbcache

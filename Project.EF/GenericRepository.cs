@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project.EF
 {
-    public class GenericRepository<TEntity> : IGenericRepository<TEntity>
+    public abstract class GenericRepository<TEntity> : IGenericRepository<TEntity>
     where TEntity : class, IDBColumns
     {
         private readonly ProjectDBContext _dbContext;
