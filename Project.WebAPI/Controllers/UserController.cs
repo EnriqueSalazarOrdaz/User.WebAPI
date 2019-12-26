@@ -31,8 +31,10 @@ namespace User.WebAPI.Controllers
 
         // POST: api/User
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult CreateUser()
         {
+            UserManager.Instance.CreateUser();
+            return Ok("");
         }
 
         // PUT: api/User/5

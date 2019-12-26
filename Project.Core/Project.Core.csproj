@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Project.EF\Project.EF.csproj" />
     <ProjectReference Include="..\Project.Schema\Project.Schema.csproj" />
   </ItemGroup>
 

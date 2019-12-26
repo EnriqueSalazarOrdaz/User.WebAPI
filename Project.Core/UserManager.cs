@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Project.Schema;
+using Project.EF;
 
 namespace Project.Core
 {
@@ -38,6 +39,16 @@ namespace Project.Core
 			var allUser = this.GetAllUsers();
 			var result = allUser.Where(user => allUser.Select(u=>u.ID).Contains(ID)).FirstOrDefault();
 			return result ?? default(User);
+		}
+
+		public void CreateUser()
+		{
+			var user = new User() { Name = "Enrique", ID = Guid.NewGuid() };
+			using (var context= new UserContext())
+			{
+				context.Users.Add(user);
+				context.SaveChanges();
+			}
 		}
 	}
 }
