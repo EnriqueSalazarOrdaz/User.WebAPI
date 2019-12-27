@@ -43,10 +43,10 @@ namespace Project.Core
 
 		public void CreateUser()
 		{
-			var user = new User() { Name = "Enrique", ID = Guid.NewGuid() };
+			var user = new User() { Name = "Enrique", ID = Guid.NewGuid(), CreationDate=DateTime.Now };
 			using (var context= new UserContext())
 			{
-				context.Users.Add(user);
+				context.User.Add(user);
 				context.SaveChanges();
 			}
 		}

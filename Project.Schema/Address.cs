@@ -14,7 +14,7 @@ namespace Project.Schema
         public Guid ID { get; set; }
         public bool Active { get; set; }
         public DateTime CreationDate { get; set; }
-        public DateTime DeleteDate { get; set; }
+        public DateTime? DeleteDate { get; set; }
         public Guid CompanyID { get; set; }
         public Guid InstanceID { get; set; }
     }

@@ -9,7 +9,7 @@ namespace Project.Schema
         Guid ID { get; set; }
         bool Active { get; set; }
         DateTime CreationDate { get; set; }
-        DateTime DeleteDate { get; set; }
+        DateTime? DeleteDate { get; set; }
         Guid CompanyID { get; set; }
         Guid InstanceID { get; set; }
     }

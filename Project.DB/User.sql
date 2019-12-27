@@ -2,7 +2,6 @@
 (
 	[ID] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
     [Name] NVARCHAR(50) NOT NULL, 
-    [AddressID] UNIQUEIDENTIFIER NOT NULL, 
     [Active] BIT NOT NULL, 
     [CreationDate] DATETIME NOT NULL, 
     [DeleteDate] DATETIME NULL, 

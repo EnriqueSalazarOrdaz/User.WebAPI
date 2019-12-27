@@ -8,13 +8,12 @@ namespace Project.Schema
     {
         
         public string Name { get; set; }
-        public List<Address> Address { get; set; }
         
 
         public Guid ID { get; set; }
         public bool Active { get; set; }
         public DateTime CreationDate { get; set; }
-        public DateTime DeleteDate { get; set; }
+        public DateTime? DeleteDate { get; set; }
         public Guid CompanyID { get; set; }
         public Guid InstanceID { get; set; }
     }
